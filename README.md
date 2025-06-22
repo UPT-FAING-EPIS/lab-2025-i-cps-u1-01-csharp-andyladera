@@ -206,6 +206,7 @@ jobs:
 ## Actividades Encargadas
 1. Adicionar un metodos de prueba para verificar el método de crédito.
 
+        // UBICACIÓN DEL MÉTODO DE CRÉDITO→ .\Bank\Bank.Domain.Tests
         [TestMethod]
         public void Credit_WithValidAmount_UpdatesBalance()
         {
