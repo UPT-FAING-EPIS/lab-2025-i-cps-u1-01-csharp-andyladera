@@ -1,17 +1,21 @@
 name: Sonar Continuos Integration
 env:
-  DOTNET_VERSION: '9.x'                     # la versión de .NET
-  SONAR_ORG: 'andyladera'                    # Nombre de la organización de sonar cloud
-  SONAR_PROJECT: 'andyladera_apibank'        # Key ID del proyecto de sonar
+  DOTNET_VERSION: '9.x'
+  SONAR_ORG: 'andyladera'
+  SONAR_PROJECT: 'andyladera_apibank'
 on:
   push:
     branches: [ "main" ]
   workflow_dispatch:
 
 jobs:
+defaults: run: working-directory: ./Bank
   sonarqube:
     name: Sonarqube Analisys
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./Bank
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-java@v4
