@@ -1,0 +1,7 @@
+organization=andyladera
+projectKey=andyladera_apibank
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.64661
+dashboardUrl=https://sonarcloud.io/dashboard?id=andyladera_apibank
+ceTaskId=AZeYsZOyvJQIkv_afLO9
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AZeYsZOyvJQIkv_afLO9
