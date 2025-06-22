@@ -1,26 +1,26 @@
-43s
+41s
 Run dotnet-sonarscanner begin /k:"andyladera_apibank" /o:"andyladera" /d:sonar.login="***" /d:sonar.host.url="https://sonarcloud.io" /d:sonar.cs.opencover.reportsPaths="*/*/*/coverage.opencover.xml" /d:sonar.qualitygate.wait=true
 SonarScanner for MSBuild 10.2
 Using the .NET Core version of the Scanner for MSBuild
 Pre-processing started.
 Preparing working directories...
-22:57:00.058  Updating build integration targets...
-22:57:01.839  Using SonarCloud.
-22:57:02.209  The JRE provisioning is a time consuming operation.
+23:07:46.225  Updating build integration targets...
+23:07:47.509  Using SonarCloud.
+23:07:47.809  The JRE provisioning is a time consuming operation.
 JRE provisioned: OpenJDK17U-jre_x64_linux_hotspot_17.0.11_9.tar.gz.
 If you already have a compatible java version installed, please add either the parameter "/d:sonar.scanner.skipJreProvisioning=true" or "/d:sonar.scanner.javaExePath=<PATH>".
-22:57:03.99  Fetching analysis configuration settings...
-22:57:05.605  Provisioning analyzer assemblies for cs...
-22:57:05.605  Installing required Roslyn analyzers...
-22:57:05.605  Processing plugin: securitycsharpfrontend version 11.4.0.38347
-22:57:06.201  Processing plugin: csharpenterprise version 10.11.0.117924
-22:57:07.166  Provisioning analyzer assemblies for vbnet...
-22:57:07.166  Installing required Roslyn analyzers...
-22:57:07.166  Processing plugin: vbnetenterprise version 10.11.0.117924
-22:57:07.401  Incremental PR analysis: Base branch parameter was not provided.
-22:57:07.401  Cache data is empty. A full analysis will be performed.
-22:57:07.419  WARNING: Multi-Language analysis is enabled. If this was not intended and you have issues such as hitting your LOC limit or analyzing unwanted files, please set "/d:sonar.scanner.scanAll=false" in the begin step.
-22:57:07.429  Pre-processing succeeded.
+23:07:49.74  Fetching analysis configuration settings...
+23:07:51.306  Provisioning analyzer assemblies for cs...
+23:07:51.306  Installing required Roslyn analyzers...
+23:07:51.307  Processing plugin: securitycsharpfrontend version 11.4.0.38347
+23:07:51.604  Processing plugin: csharpenterprise version 10.11.0.117924
+23:07:53.29  Provisioning analyzer assemblies for vbnet...
+23:07:53.29  Installing required Roslyn analyzers...
+23:07:53.29  Processing plugin: vbnetenterprise version 10.11.0.117924
+23:07:53.507  Incremental PR analysis: Base branch parameter was not provided.
+23:07:53.507  Cache data is empty. A full analysis will be performed.
+23:07:53.526  WARNING: Multi-Language analysis is enabled. If this was not intended and you have issues such as hitting your LOC limit or analyzing unwanted files, please set "/d:sonar.scanner.scanAll=false" in the begin step.
+23:07:53.536  Pre-processing succeeded.
   Determining projects to restore...
   All projects are up-to-date for restore.
 Warning: /home/runner/work/lab-2025-i-cps-u1-01-csharp-andyladera/lab-2025-i-cps-u1-01-csharp-andyladera/Bank/Bank.Domain/Models/BankAccount.cs(7,17): warning CS8618: Non-nullable field 'm_customerName' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the field as nullable. [/home/runner/work/lab-2025-i-cps-u1-01-csharp-andyladera/lab-2025-i-cps-u1-01-csharp-andyladera/Bank/Bank.Domain/Bank.Domain.csproj]
@@ -28,18 +28,15 @@ Warning: /home/runner/work/lab-2025-i-cps-u1-01-csharp-andyladera/lab-2025-i-cps
   Sonar: (Bank.Domain.csproj) Project processed successfully
   Bank.Domain.Tests -> /home/runner/work/lab-2025-i-cps-u1-01-csharp-andyladera/lab-2025-i-cps-u1-01-csharp-andyladera/Bank/Bank.Domain.Tests/bin/Debug/net9.0/Bank.Domain.Tests.dll
   Sonar: (Bank.Domain.Tests.csproj) Project processed successfully
-
 Build succeeded.
-
 Warning: /home/runner/work/lab-2025-i-cps-u1-01-csharp-andyladera/lab-2025-i-cps-u1-01-csharp-andyladera/Bank/Bank.Domain/Models/BankAccount.cs(7,17): warning CS8618: Non-nullable field 'm_customerName' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the field as nullable. [/home/runner/work/lab-2025-i-cps-u1-01-csharp-andyladera/lab-2025-i-cps-u1-01-csharp-andyladera/Bank/Bank.Domain/Bank.Domain.csproj]
     1 Warning(s)
     0 Error(s)
-
-Time Elapsed 00:00:05.63
+Time Elapsed 00:00:05.44
 SonarScanner for MSBuild 10.2
 Using the .NET Core version of the Scanner for MSBuild
 Post-processing started.
-22:57:13.459  Starting with Scanner for .NET v8 the way the `sonar.projectBaseDir` property is automatically detected has changed and this has an impact on the files that are analyzed and other properties that are resolved relative to it like `sonar.exclusions` and `sonar.test.exclusions`. If you would like to customize the behavior, please set the `sonar.projectBaseDir` property to point to a directory that contains all the source code you want to analyze. The path may be relative (to the directory from which the analysis was started) or absolute.
+23:07:59.403  Starting with Scanner for .NET v8 the way the `sonar.projectBaseDir` property is automatically detected has changed and this has an impact on the files that are analyzed and other properties that are resolved relative to it like `sonar.exclusions` and `sonar.test.exclusions`. If you would like to customize the behavior, please set the `sonar.projectBaseDir` property to point to a directory that contains all the source code you want to analyze. The path may be relative (to the directory from which the analysis was started) or absolute.
 Calling the SonarScanner CLI...
 INFO: Scanner configuration file: /home/runner/.dotnet/tools/.store/dotnet-sonarscanner/10.2.0/dotnet-sonarscanner/10.2.0/tools/netcoreapp3.1/any/sonar-scanner-5.0.2.4997/conf/sonar-scanner.properties
 INFO: Project root configuration file: /home/runner/work/lab-2025-i-cps-u1-01-csharp-andyladera/lab-2025-i-cps-u1-01-csharp-andyladera/Bank/.sonarqube/out/sonar-project.properties
@@ -51,49 +48,49 @@ INFO: User cache: /home/runner/.sonar/cache
 INFO: Analyzing on SonarCloud
 INFO: Default locale: "en", source code encoding: "UTF-8" (analysis is platform dependent)
 INFO: Load global settings
-INFO: Load global settings (done) | time=677ms
+INFO: Load global settings (done) | time=366ms
 INFO: Server id: 1BD809FA-AWHW8ct9-T_TB3XqouNu
 INFO: Loading required plugins
 INFO: Load plugins index
-INFO: Load plugins index (done) | time=203ms
+INFO: Load plugins index (done) | time=207ms
 INFO: Load/download plugins
-INFO: Load/download plugins (done) | time=441ms
+INFO: Load/download plugins (done) | time=471ms
 INFO: Found an active CI vendor: 'Github Actions'
 INFO: Load project settings for component key: 'andyladera_apibank'
-INFO: Load project settings for component key: 'andyladera_apibank' (done) | time=320ms
+INFO: Load project settings for component key: 'andyladera_apibank' (done) | time=367ms
 INFO: Process project properties
 INFO: Project key: andyladera_apibank
 INFO: Base dir: /home/runner/work/lab-2025-i-cps-u1-01-csharp-andyladera/lab-2025-i-cps-u1-01-csharp-andyladera/Bank
 INFO: Working dir: /home/runner/work/lab-2025-i-cps-u1-01-csharp-andyladera/lab-2025-i-cps-u1-01-csharp-andyladera/Bank/.sonarqube/out/.sonar
 INFO: Load project branches
-INFO: Load project branches (done) | time=272ms
+INFO: Load project branches (done) | time=247ms
 INFO: Check ALM binding of project 'andyladera_apibank'
 INFO: Detected project binding: NOT_BOUND
-INFO: Check ALM binding of project 'andyladera_apibank' (done) | time=175ms
+INFO: Check ALM binding of project 'andyladera_apibank' (done) | time=181ms
 INFO: Load project pull requests
-INFO: Load project pull requests (done) | time=173ms
+INFO: Load project pull requests (done) | time=559ms
 INFO: Load branch configuration
 INFO: Github event: push
 INFO: Auto-configuring branch main
 INFO: Load branch configuration (done) | time=3ms
 INFO: Load quality profiles
-INFO: Load quality profiles (done) | time=366ms
+INFO: Load quality profiles (done) | time=377ms
 INFO: Load active rules
-INFO: Load active rules (done) | time=9283ms
+INFO: Load active rules (done) | time=9662ms
 INFO: Organization key: andyladera
 INFO: Branch name: main, type: short-lived
 WARN: The property '<sensitive data removed>
 INFO: Preprocessing files...
-INFO: 1 language detected in 3 preprocessed files (done) | time=113ms
+INFO: 1 language detected in 3 preprocessed files (done) | time=102ms
 INFO: 0 files ignored because of inclusion/exclusion patterns
 INFO: 10 files ignored because of scm ignore settings
 INFO: Loading plugins for detected languages
 INFO: Load/download plugins
-INFO: Load/download plugins (done) | time=317ms
+INFO: Load/download plugins (done) | time=304ms
 INFO: Executing phase 2 project builders
 INFO: Executing phase 2 project builders (done) | time=18ms
 INFO: Load project repositories
-INFO: Load project repositories (done) | time=228ms
+INFO: Load project repositories (done) | time=243ms
 INFO: SCM collecting changed files in the branch
 WARN: Could not find ref: master in refs/heads, refs/remotes/upstream or refs/remotes/origin
 INFO: SCM collecting changed files in the branch (done) | time=6ms
@@ -102,7 +99,7 @@ INFO: Project configuration:
 INFO:   Excluded sources: **/build-wrapper-dump.json, */*/*/coverage.opencover.xml
 INFO: Indexing files of module 'Bank.Domain.Tests'
 INFO:   Base dir: /home/runner/work/lab-2025-i-cps-u1-01-csharp-andyladera/lab-2025-i-cps-u1-01-csharp-andyladera/Bank/Bank.Domain.Tests
-INFO:   Test paths: BanckAccountTests.cs, MSTestSettings.cs, TestResults/1f279e2f-f...
+INFO:   Test paths: BanckAccountTests.cs, MSTestSettings.cs, TestResults/7a12b726-d...
 INFO:   Excluded sources: **/build-wrapper-dump.json, */*/*/coverage.opencover.xml
 INFO: Indexing files of module 'Bank.Domain'
 INFO:   Base dir: /home/runner/work/lab-2025-i-cps-u1-01-csharp-andyladera/lab-2025-i-cps-u1-01-csharp-andyladera/Bank/Bank.Domain
@@ -111,31 +108,31 @@ INFO:   Excluded sources: **/build-wrapper-dump.json, */*/*/coverage.opencover.x
 INFO: Indexing files of module 'andyladera_apibank'
 INFO:   Base dir: /home/runner/work/lab-2025-i-cps-u1-01-csharp-andyladera/lab-2025-i-cps-u1-01-csharp-andyladera/Bank
 INFO:   Excluded sources: **/build-wrapper-dump.json, */*/*/coverage.opencover.xml
-INFO: 3 files indexed (done) | time=14ms
+INFO: 3 files indexed (done) | time=15ms
 INFO: Quality profile for cs: Sonar way
 INFO: ------------- Run sensors on module Bank.Domain.Tests
 INFO: Load metrics repository
-INFO: Load metrics repository (done) | time=169ms
+INFO: Load metrics repository (done) | time=184ms
 INFO: Sensor cache enabled
 INFO: Resolved api base url 'https://api.sonarcloud.io' from host url 'https://sonarcloud.io'.
 INFO: Load sensor cache
-INFO: Load sensor cache (196 bytes) | time=1797ms
+INFO: Load sensor cache (196 bytes) | time=1203ms
 INFO: Resolved api base url 'https://api.sonarcloud.io' from host url 'https://sonarcloud.io'.
 INFO: Sensor C# Project Type Information [csharpenterprise]
-INFO: Sensor C# Project Type Information [csharpenterprise] (done) | time=2ms
+INFO: Sensor C# Project Type Information [csharpenterprise] (done) | time=3ms
 INFO: Sensor C# Analysis Log [csharpenterprise]
 INFO: Roslyn version: 4.14.0.0
 INFO: Language version: CSharp13
 INFO: Concurrent execution: enabled
-INFO: Sensor C# Analysis Log [csharpenterprise] (done) | time=6ms
+INFO: Sensor C# Analysis Log [csharpenterprise] (done) | time=5ms
 INFO: Sensor C# Method Declarations [csharpenterprise]
-INFO: Sensor C# Method Declarations [csharpenterprise] (done) | time=3ms
+INFO: Sensor C# Method Declarations [csharpenterprise] (done) | time=4ms
 INFO: Sensor C# Telemetry [csharpenterprise]
 INFO: Sensor C# Telemetry [csharpenterprise] (done) | time=3ms
 INFO: Sensor C# Telemetry Json [csharpenterprise]
-INFO: Sensor C# Telemetry Json [csharpenterprise] (done) | time=11ms
+INFO: Sensor C# Telemetry Json [csharpenterprise] (done) | time=15ms
 INFO: Sensor C# Properties [csharpenterprise]
-INFO: Sensor C# Properties [csharpenterprise] (done) | time=1ms
+INFO: Sensor C# Properties [csharpenterprise] (done) | time=4ms
 INFO: Sensor JaCoCo XML Report Importer [jacoco]
 INFO: 'sonar.coverage.jacoco.xmlReportPaths' is not defined. Using default locations: target/site/jacoco/jacoco.xml,target/site/jacoco-it/jacoco.xml,build/reports/jacoco/test/jacocoTestReport.xml
 INFO: No report imported, no coverage information will be imported by JaCoCo XML Report Importer
@@ -143,19 +140,19 @@ INFO: Sensor JaCoCo XML Report Importer [jacoco] (done) | time=2ms
 INFO: Sensor Java Config Sensor [iac]
 INFO: 0 source files to be analyzed
 INFO: 0/0 source files have been analyzed
-INFO: Sensor Java Config Sensor [iac] (done) | time=24ms
+INFO: Sensor Java Config Sensor [iac] (done) | time=25ms
 INFO: Sensor IaC Docker Sensor [iac]
 INFO: 0 source files to be analyzed
 INFO: 0/0 source files have been analyzed
-INFO: Sensor IaC Docker Sensor [iac] (done) | time=75ms
+INFO: Sensor IaC Docker Sensor [iac] (done) | time=65ms
 INFO: Sensor Serverless configuration file sensor [security]
 INFO: 0 Serverless function entries were found in the project
 INFO: 0 Serverless function handlers were kept as entrypoints
 INFO: Sensor Serverless configuration file sensor [security] (done) | time=2ms
 INFO: Sensor AWS SAM template file sensor [security]
-INFO: Sensor AWS SAM template file sensor [security] (done) | time=1ms
+INFO: Sensor AWS SAM template file sensor [security] (done) | time=0ms
 INFO: Sensor AWS SAM Inline template file sensor [security]
-INFO: Sensor AWS SAM Inline template file sensor [security] (done) | time=1ms
+INFO: Sensor AWS SAM Inline template file sensor [security] (done) | time=0ms
 INFO: ------------- Run sensors on module Bank.Domain
 INFO: Sensor C# Project Type Information [csharpenterprise]
 INFO: Sensor C# Project Type Information [csharpenterprise] (done) | time=0ms
@@ -163,15 +160,15 @@ INFO: Sensor C# Analysis Log [csharpenterprise]
 INFO: Roslyn version: 4.14.0.0
 INFO: Language version: CSharp13
 INFO: Concurrent execution: enabled
-INFO: Sensor C# Analysis Log [csharpenterprise] (done) | time=0ms
+INFO: Sensor C# Analysis Log [csharpenterprise] (done) | time=1ms
 INFO: Sensor C# Method Declarations [csharpenterprise]
-INFO: Sensor C# Method Declarations [csharpenterprise] (done) | time=1ms
+INFO: Sensor C# Method Declarations [csharpenterprise] (done) | time=0ms
 INFO: Sensor C# Telemetry [csharpenterprise]
 INFO: Sensor C# Telemetry [csharpenterprise] (done) | time=0ms
 INFO: Sensor C# Telemetry Json [csharpenterprise]
 INFO: Sensor C# Telemetry Json [csharpenterprise] (done) | time=1ms
 INFO: Sensor C# Properties [csharpenterprise]
-INFO: Sensor C# Properties [csharpenterprise] (done) | time=0ms
+INFO: Sensor C# Properties [csharpenterprise] (done) | time=1ms
 INFO: Sensor JaCoCo XML Report Importer [jacoco]
 INFO: 'sonar.coverage.jacoco.xmlReportPaths' is not defined. Using default locations: target/site/jacoco/jacoco.xml,target/site/jacoco-it/jacoco.xml,build/reports/jacoco/test/jacocoTestReport.xml
 INFO: No report imported, no coverage information will be imported by JaCoCo XML Report Importer
@@ -179,11 +176,11 @@ INFO: Sensor JaCoCo XML Report Importer [jacoco] (done) | time=1ms
 INFO: Sensor Java Config Sensor [iac]
 INFO: 0 source files to be analyzed
 INFO: 0/0 source files have been analyzed
-INFO: Sensor Java Config Sensor [iac] (done) | time=2ms
+INFO: Sensor Java Config Sensor [iac] (done) | time=3ms
 INFO: Sensor IaC Docker Sensor [iac]
 INFO: 0 source files to be analyzed
 INFO: 0/0 source files have been analyzed
-INFO: Sensor IaC Docker Sensor [iac] (done) | time=9ms
+INFO: Sensor IaC Docker Sensor [iac] (done) | time=8ms
 INFO: Sensor Serverless configuration file sensor [security]
 INFO: 0 Serverless function entries were found in the project
 INFO: 0 Serverless function handlers were kept as entrypoints
@@ -212,13 +209,13 @@ INFO: Sensor Java Config Sensor [iac] (done) | time=2ms
 INFO: Sensor IaC Docker Sensor [iac]
 INFO: 0 source files to be analyzed
 INFO: 0/0 source files have been analyzed
-INFO: Sensor IaC Docker Sensor [iac] (done) | time=7ms
+INFO: Sensor IaC Docker Sensor [iac] (done) | time=8ms
 INFO: Sensor Serverless configuration file sensor [security]
 INFO: 0 Serverless function entries were found in the project
 INFO: 0 Serverless function handlers were kept as entrypoints
-INFO: Sensor Serverless configuration file sensor [security] (done) | time=1ms
+INFO: Sensor Serverless configuration file sensor [security] (done) | time=0ms
 INFO: Sensor AWS SAM template file sensor [security]
-INFO: Sensor AWS SAM template file sensor [security] (done) | time=0ms
+INFO: Sensor AWS SAM template file sensor [security] (done) | time=1ms
 INFO: Sensor AWS SAM Inline template file sensor [security]
 INFO: Sensor AWS SAM Inline template file sensor [security] (done) | time=0ms
 INFO: Sensor EnterpriseTextAndSecretsSensor [textenterprise]
@@ -229,7 +226,6 @@ INFO: The property "sonar.tests" is not set. To improve the analysis accuracy, w
   * The filename contains "test." or "tests."
   * Any directory in the file path is named: "doc", "docs", "test" or "tests"
   * Any directory in the file path has a name ending in "test" or "tests"
-
 INFO: Start fetching files for the text and secrets analysis
 INFO: Using Git CLI to retrieve untracked files
 INFO: Retrieving language associated files and files included via "sonar.text.inclusions" that are tracked by git
@@ -238,83 +234,83 @@ INFO: 3 source files to be analyzed for the text and secrets analysis
 INFO: 3/3 source files have been analyzed for the text and secrets analysis
 INFO: Start fetching files for the binary file analysis
 INFO: There are no files to be analyzed for the binary file analysis
-INFO: Sensor EnterpriseTextAndSecretsSensor [textenterprise] (done) | time=623ms
+INFO: Sensor EnterpriseTextAndSecretsSensor [textenterprise] (done) | time=584ms
 INFO: Sensor JavaSecuritySensor [security]
 INFO: 27 taint analysis rules enabled.
 INFO: No UCFGs have been included for analysis.
-INFO: java security sensor: Begin: 2025-06-22T22:57:34.550788384Z, End: 2025-06-22T22:57:34.560101230Z, Duration: 00:00:00.009
-  Load type hierarchy and UCFGs: Begin: 2025-06-22T22:57:34.554433142Z, End: 2025-06-22T22:57:34.557753940Z, Duration: 00:00:00.003
-    Load type hierarchy: Begin: 2025-06-22T22:57:34.554449844Z, End: 2025-06-22T22:57:34.556492179Z, Duration: 00:00:00.002
-    Load UCFGs: Begin: 2025-06-22T22:57:34.557634134Z, End: 2025-06-22T22:57:34.557662788Z, Duration: 00:00:00.000
-INFO: java security sensor peak memory: 102 MB
-INFO: Sensor JavaSecuritySensor [security] (done) | time=13ms
+INFO: java security sensor: Begin: 2025-06-22T23:08:18.823779714Z, End: 2025-06-22T23:08:18.830995298Z, Duration: 00:00:00.007
+  Load type hierarchy and UCFGs: Begin: 2025-06-22T23:08:18.827483667Z, End: 2025-06-22T23:08:18.828968448Z, Duration: 00:00:00.001
+    Load type hierarchy: Begin: 2025-06-22T23:08:18.827499807Z, End: 2025-06-22T23:08:18.828480711Z, Duration: 00:00:00.000
+    Load UCFGs: Begin: 2025-06-22T23:08:18.828867068Z, End: 2025-06-22T23:08:18.828891604Z, Duration: 00:00:00.000
+INFO: java security sensor peak memory: 103 MB
+INFO: Sensor JavaSecuritySensor [security] (done) | time=11ms
 INFO: Sensor CSharpSecuritySensor [security]
 INFO: 26 taint analysis rules enabled.
 INFO: Analyzing 6 UCFGs to detect vulnerabilities.
 INFO: No entry points found.
-INFO: csharp security sensor: Begin: 2025-06-22T22:57:34.561945600Z, End: 2025-06-22T22:57:34.956181820Z, Duration: 00:00:00.394
-  Load type hierarchy and UCFGs: Begin: 2025-06-22T22:57:34.562728246Z, End: 2025-06-22T22:57:34.644555813Z, Duration: 00:00:00.081
-    Load type hierarchy: Begin: 2025-06-22T22:57:34.562731151Z, End: 2025-06-22T22:57:34.589511972Z, Duration: 00:00:00.026
-    Load UCFGs: Begin: 2025-06-22T22:57:34.589632039Z, End: 2025-06-22T22:57:34.644476574Z, Duration: 00:00:00.054
-  Check cache: Begin: 2025-06-22T22:57:34.644697441Z, End: 2025-06-22T22:57:34.644976878Z, Duration: 00:00:00.000
-    Load cache: Begin: 2025-06-22T22:57:34.644704815Z, End: 2025-06-22T22:57:34.644724151Z, Duration: 00:00:00.000
-  Create runtime call graph: Begin: 2025-06-22T22:57:34.645084201Z, End: 2025-06-22T22:57:34.652313272Z, Duration: 00:00:00.007
-    Variable Type Analysis #1: Begin: 2025-06-22T22:57:34.645540021Z, End: 2025-06-22T22:57:34.650988541Z, Duration: 00:00:00.005
-      Create runtime type propagation graph: Begin: 2025-06-22T22:57:34.646002724Z, End: 2025-06-22T22:57:34.648421798Z, Duration: 00:00:00.002
-      Run SCC (Tarjan) on 11 nodes: Begin: 2025-06-22T22:57:34.648744326Z, End: 2025-06-22T22:57:34.649521894Z, Duration: 00:00:00.000
-      Propagate runtime types to strongly connected components: Begin: 2025-06-22T22:57:34.649636660Z, End: 2025-06-22T22:57:34.650892010Z, Duration: 00:00:00.001
-    Variable Type Analysis #2: Begin: 2025-06-22T22:57:34.651231159Z, End: 2025-06-22T22:57:34.651889101Z, Duration: 00:00:00.000
-      Create runtime type propagation graph: Begin: 2025-06-22T22:57:34.651234726Z, End: 2025-06-22T22:57:34.651580549Z, Duration: 00:00:00.000
-      Run SCC (Tarjan) on 11 nodes: Begin: 2025-06-22T22:57:34.651651162Z, End: 2025-06-22T22:57:34.651694364Z, Duration: 00:00:00.000
-      Propagate runtime types to strongly connected components: Begin: 2025-06-22T22:57:34.651747103Z, End: 2025-06-22T22:57:34.651812587Z, Duration: 00:00:00.000
-  Load config: Begin: 2025-06-22T22:57:34.652386460Z, End: 2025-06-22T22:57:34.950729514Z, Duration: 00:00:00.298
-  Compute entry points: Begin: 2025-06-22T22:57:34.950904923Z, End: 2025-06-22T22:57:34.955587907Z, Duration: 00:00:00.004
-INFO: csharp security sensor peak memory: 108 MB
-INFO: Sensor CSharpSecuritySensor [security] (done) | time=397ms
+INFO: csharp security sensor: Begin: 2025-06-22T23:08:18.832562023Z, End: 2025-06-22T23:08:19.238024739Z, Duration: 00:00:00.405
+  Load type hierarchy and UCFGs: Begin: 2025-06-22T23:08:18.832944913Z, End: 2025-06-22T23:08:18.912317790Z, Duration: 00:00:00.079
+    Load type hierarchy: Begin: 2025-06-22T23:08:18.832947017Z, End: 2025-06-22T23:08:18.860282793Z, Duration: 00:00:00.027
+    Load UCFGs: Begin: 2025-06-22T23:08:18.860451310Z, End: 2025-06-22T23:08:18.912210749Z, Duration: 00:00:00.051
+  Check cache: Begin: 2025-06-22T23:08:18.912498249Z, End: 2025-06-22T23:08:18.912792673Z, Duration: 00:00:00.000
+    Load cache: Begin: 2025-06-22T23:08:18.912505212Z, End: 2025-06-22T23:08:18.912525130Z, Duration: 00:00:00.000
+  Create runtime call graph: Begin: 2025-06-22T23:08:18.912889184Z, End: 2025-06-22T23:08:18.921050606Z, Duration: 00:00:00.008
+    Variable Type Analysis #1: Begin: 2025-06-22T23:08:18.913392610Z, End: 2025-06-22T23:08:18.919398771Z, Duration: 00:00:00.006
+      Create runtime type propagation graph: Begin: 2025-06-22T23:08:18.913993911Z, End: 2025-06-22T23:08:18.916724594Z, Duration: 00:00:00.002
+      Run SCC (Tarjan) on 11 nodes: Begin: 2025-06-22T23:08:18.917035128Z, End: 2025-06-22T23:08:18.917694637Z, Duration: 00:00:00.000
+      Propagate runtime types to strongly connected components: Begin: 2025-06-22T23:08:18.917824882Z, End: 2025-06-22T23:08:18.919293794Z, Duration: 00:00:00.001
+    Variable Type Analysis #2: Begin: 2025-06-22T23:08:18.919681993Z, End: 2025-06-22T23:08:18.920533574Z, Duration: 00:00:00.000
+      Create runtime type propagation graph: Begin: 2025-06-22T23:08:18.919685940Z, End: 2025-06-22T23:08:18.920118954Z, Duration: 00:00:00.000
+      Run SCC (Tarjan) on 11 nodes: Begin: 2025-06-22T23:08:18.920244330Z, End: 2025-06-22T23:08:18.920298602Z, Duration: 00:00:00.000
+      Propagate runtime types to strongly connected components: Begin: 2025-06-22T23:08:18.920383392Z, End: 2025-06-22T23:08:18.920447412Z, Duration: 00:00:00.000
+  Load config: Begin: 2025-06-22T23:08:18.921197292Z, End: 2025-06-22T23:08:19.232755955Z, Duration: 00:00:00.311
+  Compute entry points: Begin: 2025-06-22T23:08:19.232946984Z, End: 2025-06-22T23:08:19.237418239Z, Duration: 00:00:00.004
+INFO: csharp security sensor peak memory: 109 MB
+INFO: Sensor CSharpSecuritySensor [security] (done) | time=408ms
 INFO: Sensor PhpSecuritySensor [security]
 INFO: 18 taint analysis rules enabled.
 INFO: No UCFGs have been included for analysis.
-INFO: php security sensor: Begin: 2025-06-22T22:57:34.958487480Z, End: 2025-06-22T22:57:34.959309480Z, Duration: 00:00:00.000
-  Load type hierarchy and UCFGs: Begin: 2025-06-22T22:57:34.958742468Z, End: 2025-06-22T22:57:34.958964765Z, Duration: 00:00:00.000
-    Load type hierarchy: Begin: 2025-06-22T22:57:34.958744762Z, End: 2025-06-22T22:57:34.958802661Z, Duration: 00:00:00.000
-    Load UCFGs: Begin: 2025-06-22T22:57:34.958890365Z, End: 2025-06-22T22:57:34.958901977Z, Duration: 00:00:00.000
-INFO: php security sensor peak memory: 108 MB
+INFO: php security sensor: Begin: 2025-06-22T23:08:19.240420533Z, End: 2025-06-22T23:08:19.241334471Z, Duration: 00:00:00.000
+  Load type hierarchy and UCFGs: Begin: 2025-06-22T23:08:19.240677997Z, End: 2025-06-22T23:08:19.240988892Z, Duration: 00:00:00.000
+    Load type hierarchy: Begin: 2025-06-22T23:08:19.240680472Z, End: 2025-06-22T23:08:19.240743260Z, Duration: 00:00:00.000
+    Load UCFGs: Begin: 2025-06-22T23:08:19.240903882Z, End: 2025-06-22T23:08:19.240917788Z, Duration: 00:00:00.000
+INFO: php security sensor peak memory: 109 MB
 INFO: Sensor PhpSecuritySensor [security] (done) | time=1ms
 INFO: Sensor PythonSecuritySensor [security]
 INFO: 21 taint analysis rules enabled.
 INFO: No UCFGs have been included for analysis.
-INFO: python security sensor: Begin: 2025-06-22T22:57:34.960077429Z, End: 2025-06-22T22:57:34.960778743Z, Duration: 00:00:00.000
-  Load type hierarchy and UCFGs: Begin: 2025-06-22T22:57:34.960276402Z, End: 2025-06-22T22:57:34.960452582Z, Duration: 00:00:00.000
-    Load type hierarchy: Begin: 2025-06-22T22:57:34.960278316Z, End: 2025-06-22T22:57:34.960315636Z, Duration: 00:00:00.000
-    Load UCFGs: Begin: 2025-06-22T22:57:34.960381649Z, End: 2025-06-22T22:57:34.960392149Z, Duration: 00:00:00.000
-INFO: python security sensor peak memory: 108 MB
+INFO: python security sensor: Begin: 2025-06-22T23:08:19.242212061Z, End: 2025-06-22T23:08:19.243003599Z, Duration: 00:00:00.000
+  Load type hierarchy and UCFGs: Begin: 2025-06-22T23:08:19.242417357Z, End: 2025-06-22T23:08:19.242685551Z, Duration: 00:00:00.000
+    Load type hierarchy: Begin: 2025-06-22T23:08:19.242419411Z, End: 2025-06-22T23:08:19.242459506Z, Duration: 00:00:00.000
+    Load UCFGs: Begin: 2025-06-22T23:08:19.242608366Z, End: 2025-06-22T23:08:19.242620098Z, Duration: 00:00:00.000
+INFO: python security sensor peak memory: 109 MB
 INFO: Sensor PythonSecuritySensor [security] (done) | time=1ms
 INFO: Sensor JsSecuritySensor [security]
 INFO: 15 taint analysis rules enabled.
 INFO: No UCFGs have been included for analysis.
-INFO: js security sensor: Begin: 2025-06-22T22:57:34.961739584Z, End: 2025-06-22T22:57:34.962778370Z, Duration: 00:00:00.001
-  Load type hierarchy and UCFGs: Begin: 2025-06-22T22:57:34.962211508Z, End: 2025-06-22T22:57:34.962417303Z, Duration: 00:00:00.000
-    Load type hierarchy: Begin: 2025-06-22T22:57:34.962213492Z, End: 2025-06-22T22:57:34.962255280Z, Duration: 00:00:00.000
-    Load UCFGs: Begin: 2025-06-22T22:57:34.962339498Z, End: 2025-06-22T22:57:34.962351540Z, Duration: 00:00:00.000
-INFO: js security sensor peak memory: 108 MB
+INFO: js security sensor: Begin: 2025-06-22T23:08:19.243899984Z, End: 2025-06-22T23:08:19.244932816Z, Duration: 00:00:00.001
+  Load type hierarchy and UCFGs: Begin: 2025-06-22T23:08:19.244403521Z, End: 2025-06-22T23:08:19.244608326Z, Duration: 00:00:00.000
+    Load type hierarchy: Begin: 2025-06-22T23:08:19.244405675Z, End: 2025-06-22T23:08:19.244444458Z, Duration: 00:00:00.000
+    Load UCFGs: Begin: 2025-06-22T23:08:19.244536551Z, End: 2025-06-22T23:08:19.244548243Z, Duration: 00:00:00.000
+INFO: js security sensor peak memory: 109 MB
 INFO: Sensor JsSecuritySensor [security] (done) | time=2ms
 INFO: Sensor KotlinSecuritySensor [security]
 INFO: 24 taint analysis rules enabled.
 INFO: No UCFGs have been included for analysis.
-INFO: kotlin security sensor: Begin: 2025-06-22T22:57:34.963577878Z, End: 2025-06-22T22:57:34.964308357Z, Duration: 00:00:00.000
-  Load type hierarchy and UCFGs: Begin: 2025-06-22T22:57:34.963782622Z, End: 2025-06-22T22:57:34.963977156Z, Duration: 00:00:00.000
-    Load type hierarchy: Begin: 2025-06-22T22:57:34.963784645Z, End: 2025-06-22T22:57:34.963825081Z, Duration: 00:00:00.000
-    Load UCFGs: Begin: 2025-06-22T22:57:34.963898709Z, End: 2025-06-22T22:57:34.963911213Z, Duration: 00:00:00.000
-INFO: kotlin security sensor peak memory: 108 MB
+INFO: kotlin security sensor: Begin: 2025-06-22T23:08:19.246341383Z, End: 2025-06-22T23:08:19.247198475Z, Duration: 00:00:00.000
+  Load type hierarchy and UCFGs: Begin: 2025-06-22T23:08:19.246718943Z, End: 2025-06-22T23:08:19.246907437Z, Duration: 00:00:00.000
+    Load type hierarchy: Begin: 2025-06-22T23:08:19.246721498Z, End: 2025-06-22T23:08:19.246762485Z, Duration: 00:00:00.000
+    Load UCFGs: Begin: 2025-06-22T23:08:19.246839259Z, End: 2025-06-22T23:08:19.246850210Z, Duration: 00:00:00.000
+INFO: kotlin security sensor peak memory: 109 MB
 INFO: Sensor KotlinSecuritySensor [security] (done) | time=1ms
 INFO: Sensor GoSecuritySensor [security]
 INFO: No taint analysis rules have been enabled, will not execute taint analysis.
-INFO: go security sensor: Begin: 2025-06-22T22:57:34.965100912Z, End: 2025-06-22T22:57:34.965361430Z, Duration: 00:00:00.000
-INFO: go security sensor peak memory: 108 MB
-INFO: Sensor GoSecuritySensor [security] (done) | time=0ms
+INFO: go security sensor: Begin: 2025-06-22T23:08:19.247877271Z, End: 2025-06-22T23:08:19.248138562Z, Duration: 00:00:00.000
+INFO: go security sensor peak memory: 109 MB
+INFO: Sensor GoSecuritySensor [security] (done) | time=1ms
 INFO: ------------- Run sensors on project
 INFO: Sensor C# Telemetry processor [csharpenterprise]
-INFO: Sensor C# Telemetry processor [csharpenterprise] (done) | time=3ms
+INFO: Sensor C# Telemetry processor [csharpenterprise] (done) | time=4ms
 INFO: Sensor C# Telemetry Json processor [csharpenterprise]
 INFO: Sensor C# Telemetry Json processor [csharpenterprise] (done) | time=4ms
 INFO: Sensor C# [csharpenterprise]
@@ -324,43 +320,44 @@ INFO: Importing 2 Roslyn reports
 INFO: Found 2 MSBuild C# projects: 1 MAIN project. 1 TEST project.
 INFO: Sensor C# [csharpenterprise] (done) | time=180ms
 INFO: Sensor Analysis Warnings import [csharpenterprise]
-INFO: Sensor Analysis Warnings import [csharpenterprise] (done) | time=3ms
+INFO: Sensor Analysis Warnings import [csharpenterprise] (done) | time=4ms
 INFO: Sensor C# File Caching Sensor [csharpenterprise]
-INFO: Sensor C# File Caching Sensor [csharpenterprise] (done) | time=1ms
+INFO: Sensor C# File Caching Sensor [csharpenterprise] (done) | time=2ms
 INFO: Sensor C# Tests Coverage Report Import [csharpenterprise]
-INFO: Parsing the OpenCover report /home/runner/work/lab-2025-i-cps-u1-01-csharp-andyladera/lab-2025-i-cps-u1-01-csharp-andyladera/Bank/./Bank.Domain.Tests/TestResults/1f279e2f-f524-4cba-a6e5-73e01f787d9e/coverage.opencover.xml
-INFO: Adding this code coverage report to the cache for later reuse: /home/runner/work/lab-2025-i-cps-u1-01-csharp-andyladera/lab-2025-i-cps-u1-01-csharp-andyladera/Bank/./Bank.Domain.Tests/TestResults/1f279e2f-f524-4cba-a6e5-73e01f787d9e/coverage.opencover.xml
+INFO: Parsing the OpenCover report /home/runner/work/lab-2025-i-cps-u1-01-csharp-andyladera/lab-2025-i-cps-u1-01-csharp-andyladera/Bank/./Bank.Domain.Tests/TestResults/7a12b726-d3b1-4d39-a31f-af024b66dfdd/coverage.opencover.xml
+INFO: Adding this code coverage report to the cache for later reuse: /home/runner/work/lab-2025-i-cps-u1-01-csharp-andyladera/lab-2025-i-cps-u1-01-csharp-andyladera/Bank/./Bank.Domain.Tests/TestResults/7a12b726-d3b1-4d39-a31f-af024b66dfdd/coverage.opencover.xml
 INFO: Coverage Report Statistics: 1 files, 1 main files, 1 main files with coverage, 0 test files, 0 project excluded files, 0 other language files.
-INFO: Sensor C# Tests Coverage Report Import [csharpenterprise] (done) | time=56ms
+INFO: Sensor C# Tests Coverage Report Import [csharpenterprise] (done) | time=57ms
 INFO: Sensor CSharpArchitectureSensor [architecture]
-INFO: * Protobuf reading starting | memory total=132 | free=64 | used=67 (MB)
+INFO: * Protobuf reading starting | memory total=132 | free=63 | used=68 (MB)
 INFO: * Reading SonarArchitecture IR data from directory "/home/runner/work/lab-2025-i-cps-u1-01-csharp-andyladera/lab-2025-i-cps-u1-01-csharp-andyladera/Bank/.sonarqube/out/architecture/cs"
-INFO: * Protobuf reading complete | memory total=132 | free=64 | used=67 (MB)
-INFO: * Build file hiGraphs complete | memory total=132 | free=64 | used=67 (MB)
+INFO: * Protobuf reading complete | memory total=132 | free=63 | used=68 (MB)
+INFO: * Build file hiGraphs complete | memory total=132 | free=63 | used=68 (MB)
 INFO: * Slicing complete | memory total=132 | free=63 | used=68 (MB)
-INFO: * Export complete | memory total=132 | free=62 | used=69 (MB)
-INFO: Sensor CSharpArchitectureSensor [architecture] (done) | time=37ms
+INFO: * Export complete | memory total=132 | free=61 | used=70 (MB)
+INFO: Sensor CSharpArchitectureSensor [architecture] (done) | time=40ms
 INFO: Sensor Zero Coverage Sensor
-INFO: Sensor Zero Coverage Sensor (done) | time=1ms
+INFO: Sensor Zero Coverage Sensor (done) | time=0ms
 INFO: CPD Executor Calculating CPD for 1 file
-INFO: CPD Executor CPD calculation finished (done) | time=5ms
+INFO: CPD Executor CPD calculation finished (done) | time=6ms
 INFO: SCM writing changed lines
 WARN: Could not find ref: master in refs/heads, refs/remotes/upstream or refs/remotes/origin
-INFO: SCM writing changed lines (done) | time=3ms
-INFO: Analysis report generated in 273ms, dir size=303 KB
-INFO: Analysis report compressed in 13ms, zip size=60 KB
-INFO: Analysis report uploaded in 609ms
+INFO: SCM writing changed lines (done) | time=4ms
+INFO: Analysis report generated in 309ms, dir size=303 KB
+INFO: Analysis report compressed in 15ms, zip size=60 KB
+INFO: Analysis report uploaded in 520ms
+INFO: Sensor cache published successfully
 INFO: ------------- Check Quality Gate status
 INFO: Waiting for the analysis report to be processed (max 300s)
 INFO: ------------------------------------------------------------------------
 INFO: EXECUTION FAILURE
 INFO: ------------------------------------------------------------------------
-INFO: Total time: 28.618s
-INFO: Final Memory: 31M/120M
+INFO: Total time: 27.337s
+INFO: Final Memory: 31M/114M
+INFO: ------------------------------------------------------------------------
 ERROR: Error during SonarScanner execution
 ERROR: Project not found. Please check the 'sonar.projectKey' and 'sonar.organization' properties, the 'SONAR_TOKEN' environment variable, or contact the project administrator to check the permissions of the user the token belongs to
 ERROR: 
-INFO: ------------------------------------------------------------------------
 The SonarScanner did not complete successfully
-22:57:42.605  Post-processing failed. Exit code: 1
+23:08:27.272  Post-processing failed. Exit code: 1
 Error: Process completed with exit code 1.
