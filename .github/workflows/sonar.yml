@@ -9,7 +9,6 @@ on:
   workflow_dispatch:
 
 jobs:
-defaults: run: working-directory: ./Bank
   sonarqube:
     name: Sonarqube Analisys
     runs-on: ubuntu-latest
