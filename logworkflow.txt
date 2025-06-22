@@ -363,4 +363,4 @@ ERROR: Project not found. Please check the 'sonar.projectKey' and 'sonar.organiz
 ERROR: 
 The SonarScanner did not complete successfully
 23:37:23.121  Post-processing failed. Exit code: 1
-Error: Process completed with exit code 1.
+Error: Process completed with exit code 1. s
