@@ -205,6 +205,22 @@ jobs:
 ---
 ## Actividades Encargadas
 1. Adicionar un metodos de prueba para verificar el método de crédito.
+
+        [TestMethod]
+        public void Credit_WithValidAmount_UpdatesBalance()
+        {
+            // Arrange
+            double beginningBalance = 11.99;
+            double creditAmount = 4.55;
+            double expected = 16.54;
+            BankAccount account = new BankAccount("Mr. Bryan Walton", beginningBalance);
+            // Act
+            account.Credit(creditAmount);
+            // Assert
+            double actual = account.Balance;
+            Assert.AreEqual(expected, actual, 0.001, "Account not credited correctly");
+        }
+
 2. Adjuntar la captura donde se evidencia el incremento del valor de cobertura en un archivo cobertura.png.
 3. Adicionar a la automatizacion la construcción del archivo .nuget y la publicación como paquete en su repositorio de Github
 4. Adicionar a la automatizacion la generación del release de la versión 1.0.0 del nuget, debe indicar las modificaciones del paquete en base a los comentarios de los commits realizados
