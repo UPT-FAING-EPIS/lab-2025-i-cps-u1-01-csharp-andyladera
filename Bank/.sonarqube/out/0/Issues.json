@@ -67,6 +67,43 @@
           }
         },
         {
+          "ruleId": "CA1512",
+          "level": "note",
+          "message": "Use 'ArgumentOutOfRangeException.ThrowIfNegative' en lugar de iniciar explícitamente una nueva instancia de excepción",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/LENOVO/Documents/Calidad/lab-2025-i-cps-u1-01-csharp-andyladera/Bank/Bank.Domain/Models/BankAccount.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 13,
+                  "endLine": 26,
+                  "endColumn": 65
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/LENOVO/Documents/Calidad/lab-2025-i-cps-u1-01-csharp-andyladera/Bank/Bank.Domain/Models/BankAccount.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 17,
+                  "endLine": 25,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "MethodNameProperty": "ThrowIfNegative"
+            }
+          }
+        },
+        {
           "ruleId": "CA1507",
           "level": "note",
           "message": "Use nameof en lugar del literal de cadena \"amount\"",
@@ -106,43 +143,6 @@
           ],
           "properties": {
             "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CA1512",
-          "level": "note",
-          "message": "Use 'ArgumentOutOfRangeException.ThrowIfNegative' en lugar de iniciar explícitamente una nueva instancia de excepción",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/LENOVO/Documents/Calidad/lab-2025-i-cps-u1-01-csharp-andyladera/Bank/Bank.Domain/Models/BankAccount.cs",
-                "region": {
-                  "startLine": 25,
-                  "startColumn": 13,
-                  "endLine": 26,
-                  "endColumn": 65
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/LENOVO/Documents/Calidad/lab-2025-i-cps-u1-01-csharp-andyladera/Bank/Bank.Domain/Models/BankAccount.cs",
-                "region": {
-                  "startLine": 25,
-                  "startColumn": 17,
-                  "endLine": 25,
-                  "endColumn": 23
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1,
-            "customProperties": {
-              "MethodNameProperty": "ThrowIfNegative"
-            }
           }
         },
         {

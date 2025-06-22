@@ -5,6 +5,13 @@ C:\Users\LENOVO\.nuget\packages\microsoft.testplatform.testhost\17.12.0\build\ne
 C:\Users\LENOVO\.nuget\packages\microsoft.testplatform.testhost\17.12.0\build\netcoreapp3.1\x64\testhost.dll
 C:\Users\LENOVO\.nuget\packages\mstest.testadapter\3.6.4\build\_localization\es\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.resources.dll
 C:\Users\LENOVO\.nuget\packages\mstest.testadapter\3.6.4\build\_localization\es\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.resources.dll
+C:\Users\LENOVO\Documents\Calidad\lab-2025-i-cps-u1-01-csharp-andyladera\Bank\Bank.Domain.Tests\TestResults\288e2642-3709-49d6-813c-a8509c5310e2\coverage.cobertura.xml
+C:\Users\LENOVO\Documents\Calidad\lab-2025-i-cps-u1-01-csharp-andyladera\Bank\Bank.Domain.Tests\TestResults\354c50fa-8ab4-485a-85f5-77d012012f21\coverage.opencover.xml
+C:\Users\LENOVO\Documents\Calidad\lab-2025-i-cps-u1-01-csharp-andyladera\Bank\Bank.Domain.Tests\TestResults\429e6634-2464-4c12-a76c-30a02880903a\coverage.opencover.xml
+C:\Users\LENOVO\Documents\Calidad\lab-2025-i-cps-u1-01-csharp-andyladera\Bank\Bank.Domain.Tests\TestResults\58b5a1f8-8260-42a8-93c3-ecc5e7acfe76\coverage.cobertura.xml
+C:\Users\LENOVO\Documents\Calidad\lab-2025-i-cps-u1-01-csharp-andyladera\Bank\Bank.Domain.Tests\TestResults\59854e55-b427-429f-a900-fdfedf50a78c\coverage.opencover.xml
+C:\Users\LENOVO\Documents\Calidad\lab-2025-i-cps-u1-01-csharp-andyladera\Bank\Bank.Domain.Tests\TestResults\771eba52-1237-417a-8081-b6160c20cfef\coverage.cobertura.xml
+C:\Users\LENOVO\Documents\Calidad\lab-2025-i-cps-u1-01-csharp-andyladera\Bank\Bank.Domain.Tests\TestResults\7f8556cb-9748-4231-8da8-28d8774bc844\coverage.opencover.xml
 C:\Users\LENOVO\Documents\Calidad\lab-2025-i-cps-u1-01-csharp-andyladera\Bank\Bank.Domain.Tests\TestResults\803b56ca-c89b-4301-9f86-5cc2452d5049\coverage.cobertura.xml
 C:\Users\LENOVO\Documents\Calidad\lab-2025-i-cps-u1-01-csharp-andyladera\Bank\Bank.Domain.Tests\TestResults\9d2f8f33-beb9-4f40-aba8-3df6c233b58b\coverage.cobertura.xml
 C:\Users\LENOVO\.nuget\packages\mstest.testadapter\3.6.4\build\net8.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll

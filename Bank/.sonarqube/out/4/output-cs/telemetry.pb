@@ -1,1 +1,0 @@
-‚RlC:\Users\LENOVO\Documents\Calidad\lab-2025-i-cps-u1-01-csharp-andyladera\Bank\Bank.Domain\Bank.Domain.csproj¢net9.0òCSharp13
