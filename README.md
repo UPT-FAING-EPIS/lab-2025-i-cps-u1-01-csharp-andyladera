@@ -223,6 +223,9 @@ jobs:
         }
 
 2. Adjuntar la captura donde se evidencia el incremento del valor de cobertura en un archivo cobertura.png.
-3. Adicionar a la automatizacion la construcción del archivo .nuget y la publicación como paquete en su repositorio de Github
-4. Adicionar a la automatizacion la generación del release de la versión 1.0.0 del nuget, debe indicar las modificaciones del paquete en base a los comentarios de los commits realizados
+
+   ![image](https://github.com/user-attachments/assets/f671cdef-52ad-4aa2-b295-c0bc9afbb94f)
+
+4. Adicionar a la automatizacion la construcción del archivo .nuget y la publicación como paquete en su repositorio de Github
+5. Adicionar a la automatizacion la generación del release de la versión 1.0.0 del nuget, debe indicar las modificaciones del paquete en base a los comentarios de los commits realizados
    
